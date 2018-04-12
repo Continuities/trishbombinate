@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    background: #111;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-form {
+    color: white;
+    width: 600px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#file-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.file-label, .trish-button {
+    font-size: 24px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #111;
+    background: #FF4136;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.target-selected .file-label {
+    display: none;
+}
+
+.trish-button {
+    display: none;
+}
+
+.target-selected .trish-button {
+    display: initial;
+}

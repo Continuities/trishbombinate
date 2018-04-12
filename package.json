@@ -1,0 +1,16 @@
+{
+  "name": "trishbombinate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Continuities/trishbombinate.git",
+  "author": "Continuities <michael@doublespeakgames.com>",
+  "license": "MIT",
+  "scripts": {
+    "server": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "formidable": "^1.2.1",
+    "yargs": "^11.0.0"
+  }
+}
