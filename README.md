@@ -2,5 +2,6 @@
 Because everything's better with Trish!
 
 ## Make it werk
-1. `yarn install`
-2. `yarn run server`
+1. Install ImageMagick according to your OS
+2. `yarn install`
+3. `yarn run server`

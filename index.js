@@ -37,7 +37,3 @@ app.post('/upload', (req, res) => {
 app.listen(argv.port, () => {
     console.log(`autotrishbomb running on port ${argv.port}`);
 });
-
-// Resize: convert test.jpg -resize 800x450^ -quality 100 -gravity center -extent 800x450 output.gif
-// Compose: convert TrishBomb.gif -coalesce null: resized.jpg -compose Dst_Over -layers composite -layers optimize composed.gif
-// All in one: convert TrishBomb.gif -coalesce null: \( test.jpg -resize 800x450^ -quality 100 -gravity center -extent 800x450 \) -compose Dst_Over -layers composite -layers optimize composed.gif
