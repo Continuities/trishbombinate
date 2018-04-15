@@ -29,7 +29,7 @@ app.post('/upload', (req, res) => {
         exec(`convert ${__dirname}/TrishBomb.gif -coalesce null: \\( ${UPLOAD_DIR}/${file.name} -resize 800x450^ -quality 100 -gravity center -extent 800x450 \\) -compose Dst_Over -layers composite -layers optimize ${__dirname}/www/bombs/${outName}`, (err, stdout, stderr) => {
             console.log(`${err}, ${stdout}, ${stderr}`);
             console.log(`Trishbombed ${outName}`);
-            res.sendFile(`${__dirname}/www/bombs/${outName}`);
+            res.redirect(`/bombs/${outName}`);
         });
     });
 });
