@@ -6,6 +6,7 @@
   "author": "Continuities <michael@doublespeakgames.com>",
   "license": "MIT",
   "scripts": {
+    "debug": "node --inspect index.js",
     "server": "node index.js"
   },
   "dependencies": {
